@@ -154,7 +154,7 @@ for(int i = 0; i < BOARD_ROWS; i++) {
     }
   }
   bool check = false;
-  if (game.gamestate() == X)
+  if (game.gameState() == X)
     check = true;
 	ASSERT_TRUE(check);
 }
