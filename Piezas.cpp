@@ -60,7 +60,6 @@ Piece Piezas::dropPiece(int column)
         return temp;
       }
     }
-
     return Blank;//if no piece found return blank
 }
 
