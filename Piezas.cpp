@@ -104,7 +104,7 @@ Piece Piezas::gameState()
       }
       else {
          if (curIndex == 1 ) {
-           curIndex = 0
+           curIndex = 0;
          }
          else if(curIndex == 0 && 1==1){
            curIndex = 1;
