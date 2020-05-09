@@ -1,6 +1,5 @@
 [![Build Status](https://travis-ci.org/BBBrando/Piezas.svg?branch=master)](https://travis-ci.org/BBBrando/Piezas)
 [![Coverage Status](https://coveralls.io/repos/github/BBBrando/Piezas/badge.svg?branch=master)](https://coveralls.io/github/BBBrando/Piezas?branch=master)
-<a href='https://coveralls.io/github/BBBrando/Piezas?branch=master'><img src='https://coveralls.io/repos/github/BBBrando/Piezas/badge.svg?branch=master' alt='Coverage Status' /></a>
 
 # Piezas
 
