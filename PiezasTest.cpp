@@ -18,3 +18,12 @@ TEST(PiezasTest, sanityCheck)
 {
 	ASSERT_TRUE(true);
 }
+TEST(piezasTest, firstPiece)
+{
+  Piezas game;
+  Piece test = game.dropPiece(0);
+  bool check = false;
+  if (test == X)
+    check = true;
+	ASSERT_TRUE(check);
+}
