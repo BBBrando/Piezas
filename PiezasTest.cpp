@@ -1,7 +1,6 @@
 /**
  * Unit Tests for Piezas
 **/
-
 #include <gtest/gtest.h>
 #include "Piezas.h"
  
