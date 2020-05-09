@@ -1,6 +1,6 @@
-[![Build Status](https://travis-ci.org/BBBrando/Piezas.svg?branch=master)](https://travis-ci.org/BBBrando/Piezas)
+[![Build Status](https://travis-ci.org/BBBrando/Piezas.svg?)](https://travis-ci.org/BBBrando/Piezas)
 
-[![Coverage Status](https://coveralls.io/repos/github/BBBrando/Piezas/badge.svg?branch=master)](https://coveralls.io/github/BBBrando/Piezas?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/BBBrando/Piezas/badge.svg?)](https://coveralls.io/github/BBBrando/Piezas?)
 
 # Piezas
 
