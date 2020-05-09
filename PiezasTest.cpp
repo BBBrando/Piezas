@@ -132,3 +132,14 @@ TEST(piezasTest, testPieceAtBlank)
     check = true;
 	ASSERT_TRUE(check);
 }
+
+TEST(piezasTest, resetTest)
+{
+  Piezas game;
+  Piece test = game.dropPiece(0);
+game.reset();
+  bool check = false;
+  if (game.pieceAt(0,0) == Blank)
+    check = true;
+	ASSERT_TRUE(check);
+}
