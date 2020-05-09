@@ -143,3 +143,18 @@ game.reset();
     check = true;
 	ASSERT_TRUE(check);
 }
+
+TEST(piezasTest, allX_Xwins)
+{
+  Piezas game;
+for(int i = 0; i < BOARD_ROWS; i++) {
+    for(int j = 0; j < BOARD_COLS; j++) {
+      game.dropPiece(j);
+      game.dropPiece(10);
+    }
+  }
+  bool check = false;
+  if (game.gamestate() == X)
+    check = true;
+	ASSERT_TRUE(check);
+}
