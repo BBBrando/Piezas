@@ -67,7 +67,7 @@ TEST(piezasTest, testPieceAt)
     check = true;
 	ASSERT_TRUE(check);
 }
-TEST(piezasTest, testPieceAt-1)
+TEST(piezasTest, testPieceAtneg1)
 {
   Piezas game;
   Piece test = game.dropPiece(0);
