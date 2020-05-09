@@ -189,7 +189,7 @@ TEST(piezasTest, falseGame)
 {
   Piezas game;
   bool check = false;
-  if (game.gameState() == Blank)
+  if (game.gameState() == Invalid)
     check = true;
 	ASSERT_TRUE(check);
 }
