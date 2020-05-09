@@ -158,3 +158,31 @@ for(int i = 0; i < BOARD_ROWS; i++) {
     check = true;
 	ASSERT_TRUE(check);
 }
+
+TEST(piezasTest, Owins)
+{
+  Piezas game;
+for(int i = 0; i < BOARD_ROWS; i++) {
+    for(int j = 0; j < BOARD_COLS; j++) {
+      game.dropPiece(0);
+      game.dropPiece(j);
+    }
+  }
+  bool check = false;
+  if (game.gameState() == O)
+    check = true;
+	ASSERT_TRUE(check);
+}
+TEST(piezasTest, tie)
+{
+  Piezas game;
+for(int i = 0; i < BOARD_ROWS; i++) {
+    for(int j = 0; j < BOARD_COLS; j++) {
+      game.dropPiece(j);
+    }
+  }
+  bool check = false;
+  if (game.gameState() == Blank)
+    check = true;
+	ASSERT_TRUE(check);
+}
