@@ -1,5 +1,6 @@
 #include "Piezas.h"
 #include <vector>
+using namespace std;
 /** CLASS Piezas
  * Class for representing a Piezas vertical board, which is roughly based
  * on the game "Connect Four" where pieces are placed in a column and
@@ -22,7 +23,7 @@
 **/
 Piezas::Piezas()
 {
-  board = std::vector<std::vector<Piece>>(BOARD_ROWS,std::vector<Piece>(BOARD_COLS,Blank));
+  board = vector<vector<Piece>>(BOARD_ROWS,vector<Piece>(BOARD_COLS,Blank));
   turn = X;
 }
 
@@ -32,7 +33,7 @@ Piezas::Piezas()
 **/
 void Piezas::reset()
 {
-  board = std::vector<std::vector<Piece>>(BOARD_ROWS, std::vector<Piece>(BOARD_COLS,Blank));
+  board = vector<vector<Piece>>(BOARD_ROWS, vector<Piece>(BOARD_COLS,Blank));
 }
 
 /**
@@ -60,6 +61,7 @@ Piece Piezas::dropPiece(int column)
         return temp;
       }
     }
+
     return Blank;//if no piece found return blank
 }
 
@@ -69,6 +71,13 @@ Piece Piezas::dropPiece(int column)
 **/
 Piece Piezas::pieceAt(int row, int column)
 {
+  if (row < 0 || row >= BOARD_ROWS) {
+    return Invalid;
+  }
+  if (column < 0 || column >= BOARD_COLS) {
+    return Invalid;
+  }
+
   return board[row][column];
 }
 
@@ -102,7 +111,7 @@ Piece Piezas::gameState()
       }
       else {
          if (curIndex == 1 ) {
-           curIndex = 0;
+           curIndex = 0
          }
          else if(curIndex == 0 && 1==1){
            curIndex = 1;
@@ -148,3 +157,4 @@ Piece Piezas::gameState()
   return Blank;
 
 }//gameState
+
