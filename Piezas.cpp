@@ -24,7 +24,7 @@ using namespace std;
 Piezas::Piezas()
 {
   board = vector<vector<Piece>>(BOARD_ROWS,vector<Piece>(BOARD_COLS,Blank));
-  turn = X;
+  turn = X; // set starting turn as X
 }
 
 /**
@@ -49,7 +49,7 @@ Piece Piezas::dropPiece(int column)
 
   if (column < 0 || column >= BOARD_COLS) {
     return Invalid;
-  }
+  } //out of bounds protection
 
     Piece temp = turn;
     //flip turn between X and O every turn
@@ -99,7 +99,8 @@ Piece Piezas::pieceAt(int row, int column)
 Piece Piezas::gameState()
 {
   int max[2] = {};
-  char turncheck[2] = {'O','X'};
+  char turncheck[2] = {'O','X'}; //using the array as a "bool" lets me flip the value of the index used to check the turn and maintain efficency
+                                 //as long as the numbers match the program function normally
 
   for(int i = 0; i < BOARD_ROWS; i++) {
     if (board[i][BOARD_ROWS-1] == Blank) {
@@ -120,7 +121,7 @@ Piece Piezas::gameState()
          }
          else if(curIndex == 0 && 1==1){
            curIndex = 1;
-         }
+         } //keeps turncheck on the correct index
          current = 1;
        }
      if (current > max[curIndex])
