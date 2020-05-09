@@ -33,7 +33,7 @@ Piezas::Piezas()
 **/
 void Piezas::reset()
 {
-  board = vector<vector<Piece>>(BOARD_ROWS, vector<Piece>(BOARD_COLS,Blank))
+  board = vector<vector<Piece>>(BOARD_ROWS, vector<Piece>(BOARD_COLS,Blank));
 }
 
 /**
@@ -51,7 +51,7 @@ Piece Piezas::dropPiece(int column)
     if (turn == X) {
       turn = O;
     }
-    else if (turn = O) {
+    else if (turn == O) {
       turn = X;
     }
 
@@ -103,11 +103,11 @@ Piece Piezas::gameState()
         current++;
       }
       else {
-         if (curIndex = 1 ) {
+         if (curIndex == 1 ) {
            curIndex = 0
          }
-         else if(curIndex = 0 && 1==1){
-           curIndex = 1
+         else if(curIndex == 0 && 1==1){
+           curIndex = 1;
          }
          current = 1;
        }
@@ -127,11 +127,11 @@ Piece Piezas::gameState()
         current++;
       }
       else {
-         if (curIndex = 1 ) {
-           curIndex = 0
+         if (curIndex == 1 ) {
+           curIndex = 0;
          }
-         else if(curIndex = 0 && 1==1){
-           curIndex = 1
+         else if(curIndex == 0 && 1==1){
+           curIndex = 1;
          }
        current = 1;
      }
