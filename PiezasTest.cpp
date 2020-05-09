@@ -144,13 +144,13 @@ game.reset();
 	ASSERT_TRUE(check);
 }
 
-TEST(piezasTest, allX_Xwins)
+TEST(piezasTest, Xwins)
 {
   Piezas game;
 for(int i = 0; i < BOARD_ROWS; i++) {
     for(int j = 0; j < BOARD_COLS; j++) {
       game.dropPiece(j);
-      game.dropPiece(10);
+      game.dropPiece(0);
     }
   }
   bool check = false;
