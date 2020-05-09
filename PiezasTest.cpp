@@ -38,3 +38,22 @@ TEST(PiezasTest, testFirst2Moves)
     check = true;
 	ASSERT_TRUE(check);
 }
+
+TEST(piezasTest, negativePlacement)
+{
+  Piezas game;
+  Piece test = game.dropPiece(-1);
+  bool check = false;
+  if (test == Invalid)
+    check = true;
+	ASSERT_TRUE(check);
+}
+TEST(piezasTest, outOfBoard)
+{
+  Piezas game;
+  Piece test = game.dropPiece(20);
+  bool check = false;
+  if (test == Invalid)
+    check = true;
+	ASSERT_TRUE(check);
+}
