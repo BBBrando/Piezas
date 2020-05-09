@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/BBBrando/Piezas.svg?branch=master)](https://travis-ci.org/BBBrando/Piezas)
+
 [![Coverage Status](https://coveralls.io/repos/github/BBBrando/Piezas/badge.svg?branch=master)](https://coveralls.io/github/BBBrando/Piezas?branch=master)
 
 # Piezas
