@@ -85,3 +85,50 @@ TEST(piezasTest, testPieceAt9)
     check = true;
 	ASSERT_TRUE(check);
 }
+TEST(piezasTest, testPieceAt99)
+{
+  Piezas game;
+  Piece test = game.dropPiece(0);
+  bool check = false;
+  if (game.pieceAt(9,9) == Invalid)
+    check = true;
+	ASSERT_TRUE(check);
+}
+
+TEST(piezasTest, testPieceAtneg99)
+{
+  Piezas game;
+  Piece test = game.dropPiece(0);
+  bool check = false;
+  if (game.pieceAt(-9,9) == Invalid)
+    check = true;
+	ASSERT_TRUE(check);
+}
+TEST(piezasTest, testPieceAtneg9neg9)
+{
+  Piezas game;
+  Piece test = game.dropPiece(0);
+  bool check = false;
+  if (game.pieceAt(-9,-9) == Invalid)
+    check = true;
+	ASSERT_TRUE(check);
+}
+
+TEST(piezasTest, testPieceAtValid)
+{
+  Piezas game;
+  Piece test = game.dropPiece(0);
+  bool check = false;
+  if (game.pieceAt(0,0) == X)
+    check = true;
+	ASSERT_TRUE(check);
+}
+TEST(piezasTest, testPieceAtBlank)
+{
+  Piezas game;
+  Piece test = game.dropPiece(0);
+  bool check = false;
+  if (game.pieceAt(0,2) == Blank)
+    check = true;
+	ASSERT_TRUE(check);
+}
