@@ -27,3 +27,14 @@ TEST(piezasTest, firstPiece)
     check = true;
 	ASSERT_TRUE(check);
 }
+
+TEST(PiezasTest, testFirst2Moves)
+{
+  Piezas game;
+  Piece test1 = game.dropPiece(0);
+  Piece test2 = game.dropPiece(0);
+  bool check = false;
+  if (test1 == X && test2 == O)
+    check = true;
+	ASSERT_TRUE(check);
+}
