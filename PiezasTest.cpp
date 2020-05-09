@@ -185,3 +185,11 @@ for(int i = 0; i < BOARD_ROWS; i++) {
     check = true;
 	ASSERT_TRUE(check);
 }
+TEST(piezasTest, falseGame)
+{
+  Piezas game;
+  bool check = false;
+  if (game.gameState() == Blank)
+    check = true;
+	ASSERT_TRUE(check);
+}
