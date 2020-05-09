@@ -57,3 +57,31 @@ TEST(piezasTest, outOfBoard)
     check = true;
 	ASSERT_TRUE(check);
 }
+
+TEST(piezasTest, testPieceAt)
+{
+  Piezas game;
+  Piece test = game.dropPiece(0);
+  bool check = false;
+  if (game.pieceAt(0,0) == X)
+    check = true;
+	ASSERT_TRUE(check);
+}
+TEST(piezasTest, testPieceAt-1)
+{
+  Piezas game;
+  Piece test = game.dropPiece(0);
+  bool check = false;
+  if (game.pieceAt(0,-1) == Invalid)
+    check = true;
+	ASSERT_TRUE(check);
+}
+TEST(piezasTest, testPieceAt9)
+{
+  Piezas game;
+  Piece test = game.dropPiece(0);
+  bool check = false;
+  if (game.pieceAt(0,9) == Invalid)
+    check = true;
+	ASSERT_TRUE(check);
+}
